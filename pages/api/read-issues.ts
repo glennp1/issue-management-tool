@@ -10,7 +10,7 @@ export default function readIssuesHandler(
 ) {
   // --- authenticate ---
   try {
-      console.log('authenticating the request...');
+    console.log('authenticating the request...');
   } catch (e) {
     res.status(400).json({ errorMsg: 'authentication failed' })
   }
@@ -24,13 +24,13 @@ export default function readIssuesHandler(
     issues = [
       {
         id: "1",
-        title: "Create account authentication",
+        title: "Create account log in",
         description: "Allow returning users to log in so that they can access the tool"
       },
       {
         id: "2",
-        title: "Create account authentication",
-        description: "Allow returning users to log in so that they can access the tool"
+        title: "Create account log out",
+        description: "Allow logged in users to log out so that they can end their session"
       },
     ]
   } catch (e) {
